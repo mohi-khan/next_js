@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import quiztypes from "./quiztypes";
+import QuizTypes from "../components/quiztypes";
 
 
 
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body>
   <div className="flex h-screen">
   <div className="fixed h-screen overflow-y-auto bg-gray-800 text-white w-64">
-  <quiztypes/>
+  <QuizTypes/>
   </div>
 
   <div className="flex-grow bg-gray-100 p-4">

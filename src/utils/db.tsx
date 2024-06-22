@@ -11,14 +11,4 @@ const pool = new Pool({
 });
 
 // Function to connect to the database
-const connectDB = async () => {
-  try {
-    await pool.connect();
-    console.log('Connected to the PostgreSQL database');
-  } catch (err) {
-    console.error('Error connecting to the PostgreSQL database', err);
-  }
-};
-
-// Export the pool and connectDB function
-module.exports = { pool, connectDB };
+export default pool;
