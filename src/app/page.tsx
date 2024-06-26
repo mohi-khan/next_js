@@ -15,12 +15,14 @@ interface quiz_types{
 
 
 export default function Home() {
+  
  return(
   <section>
-   
-    <Suspense fallback='<p>loading....<p/>'>
-  
-    </Suspense>
+      <h1 className="text-gray-900">Select Your Quizzes</h1>
+ 
+     
+     
+    
   </section>
  )
 }

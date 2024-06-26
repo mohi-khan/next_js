@@ -8,7 +8,6 @@ const QuizTypes=async function()
   try {
     const client = await pool.connect();
     const quiz = await client.query('SELECT * from quiz_types');
-    console.log(quiz.rows)
     const difficulty=await client.query('SELECT * from quiz_difficulties')
     await client.release();
     return(
